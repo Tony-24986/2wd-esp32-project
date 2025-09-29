@@ -24,5 +24,8 @@ This repository is for the next project, a bluetooth controlled 2WD car.
 - 1 count of First-degree burns from a soldering iron.
 - 1 possible count of Second-degree burns from loose wire connections.
 - A shit ton of Pb inhaled.
+- Some Li fumes inhaled probably.
 - 1 stab from battery holder pin.
 - Atleast VND 800k spent.
+- 3 dead batteries.
+- 3 hours trying to troubleshoot the batteries.
