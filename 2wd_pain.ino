@@ -31,11 +31,13 @@ void setup() {
 }
 
 void loop() {
-  while BT.avalible(){
-    if (BT.read("Sp:"))
+  if (BT.avalible() > 0){
+    String inp = BT.read()
+    if (inp[0:2] == "Sp:"){}
   }
 }
 
 void driF() {
-  
+  digitalWrite(m01, 1);
+  digitalWrite(m03, 1);
 }
