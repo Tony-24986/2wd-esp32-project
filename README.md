@@ -6,8 +6,9 @@ This repository is for the next project, a bluetooth controlled 2WD car.
 # Materials used so far:
 - 1x 2WD car kit
 - 1x ESP32
-- 2x 2000mAh 18650 batteries
-- 1x 2500mAh 18650 battery
+- 2x 2000mAh 18650 batteries (basically dead)
+- 1x 2500mAh 18650 battery (dead)
+- 4x 2500mAh 18650 batteries (2 not needed)
 - 4 18650 batteries holder
 - Phone (ideally Android but I have an iPhone so I'll use Python on a computer)
 
