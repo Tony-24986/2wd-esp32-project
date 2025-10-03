@@ -5,7 +5,8 @@ This repository is for the next project, a bluetooth controlled 2WD car.
 
 # Materials used so far:
 - 1x 2WD car kit
-- 1x ESP32 DevKitC (fried)
+- 1x ESP32 DevKitC (fried) (a coincidental excuse to buy the USB-C one)
+- 1x ESP32 DevKitC (i think) USB-C Version
 - 2x 2000mAh 18650 batteries (basically dead)
 - 1x 2500mAh 18650 battery (dead)
 - 4x 2500mAh 18650 batteries (2 not needed)
