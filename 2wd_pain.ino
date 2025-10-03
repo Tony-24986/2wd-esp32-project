@@ -1,4 +1,5 @@
 #include "BluetoothSerial.h"
+#include <bits/stdc++.h>
 #define m01 16
 #define m02 17
 #define m03 18
@@ -6,12 +7,14 @@
 #define eA 4
 #define eB 5
 BluetoothSerial BT;
+using namespace std;
 
 const int freq = 555;
 const int pChA = 0;
 const int pChB = 2;
 const int res = 8;
 int dCyc = 255;
+int info[6+5];
 
 void setup() {
   //pin setup
@@ -33,11 +36,15 @@ void setup() {
 void loop() {
   if (BT.avalible() > 0){
     String inp = BT.read()
-    if (inp[0:2] == "Sp:"){}
-  }
-}
+    string buff = (inp.c_str(), inp.length());
+    istringstream iss (buff);
+    int s;
+    for (int i = 0; i < 5; i++){
+      iss >> s;
+      info[i] = s;
+    }
 
-void driF() {
-  digitalWrite(m01, 1);
-  digitalWrite(m03, 1);
+    // on commands (i'll add later)
+    // off commands
+  }
 }
