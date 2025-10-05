@@ -1,4 +1,4 @@
-#include "BluetoothSerial.h"
+//#include "BluetoothSerial.h"
 #include <bits/stdc++.h>
 #define m01 16
 #define m02 17
@@ -6,7 +6,7 @@
 #define m04 19
 #define eA 4
 #define eB 5
-BluetoothSerial BT;
+//BluetoothSerial BT;
 using namespace std;
 
 //variables
@@ -31,12 +31,12 @@ void setup() {
   ledcAttachChannel(eB, freq, res, pChB);
 
   //Bth setup
-  BT.begin("Lithium pain in the ass.");
+  //BT.begin("Lithium pain in the ass.");
 }
 
 void loop() {
-  if (BT.available() > 0){ //format (forward down left right powa)
-    String Arbuff = BT.readString();
+  if (Serial.available() > 0){ //format (forward down left right powa)
+    String Arbuff = Serial.readString();
     string buff(Arbuff.c_str(), Arbuff.length());
     istringstream inp (buff);
     int s;
