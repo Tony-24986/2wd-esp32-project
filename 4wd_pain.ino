@@ -1,26 +1,57 @@
-
+//all of this code was typed with no ai, only lead fumes, hot silicon, and hatred for today's politics on ai 
 #include <SoftwareSerial.h>
-#define pA 5
-#define pB 6
-#define pC 9
-#define pD 10
+#define pA A1
+#define pB A2
+#define pC A3
+#define pD A4
 #define softRX 12
 #define softTX 13
+#define dW digitalWrite
 
 SoftwareSerial bt(softRX, softTX);
-bool arr[4+3] = 0;
 
 void setup() {
-  pinMode(A1, OUTPUT);
-  pinMode(A2, OUTPUT);
-  pinMode(A3, OUTPUT);
-  pinMode(A4, OUTPUT);
+  pinMode(pA, OUTPUT);
+  pinMode(pB, OUTPUT);
+  pinMode(pC, OUTPUT);
+  pinMode(pD, OUTPUT);
   Serial.begin(9600);
   bt.begin(19200);
 }
 
 void loop() {
   if(bt.availible()>0){
-    String st = bt.read();
+    int st = bt.read();
+    run(st);
+  }
+}
+
+void run(int c){
+  switch(c){
+    case 0:
+      dW(pA, 0);
+      dW(pB, 0);
+      dW(pC, 0);
+      dW(pD, 0);
+    case 1:
+      dW(pA, 1);
+      dW(pB, 0);
+      dW(pC, 1);
+      dW(pD, 0);
+    case 2:
+      dW(pA, 0);
+      dW(pB, 1);
+      dW(pC, 0);
+      dW(pD, 1);
+    case 3:
+      dW(pA, 0);
+      dW(pB, 1);
+      dW(pC, 1);
+      dW(pD, 0);
+    case 4
+      dW(pA, 1);
+      dW(pB, 0);
+      dW(pC, 0);
+      dW(pD, 1);
   }
 }
